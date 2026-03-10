@@ -4,6 +4,7 @@ import { Github, Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -32,7 +33,7 @@ const Navbar = () => {
         <a href="#" className="flex items-center gap-2 group">
           <Github className="w-8 h-8 text-foreground group-hover:text-primary transition-colors" />
           <span className="font-mono font-semibold text-foreground">
-            dev<span className="text-primary">.portfolio</span>
+            najam<span className="text-primary">.portfolio</span>
           </span>
         </a>
 

@@ -5,7 +5,7 @@ import { skills, categories } from "@/data/skills";
 const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [activeCategory, setActiveCategory] = useState("Frontend");
+  const [activeCategory, setActiveCategory] = useState(categories[0]);
 
   const filteredSkills = skills.filter((s) => s.category === activeCategory);
 
@@ -20,7 +20,7 @@ const Skills = () => {
         >
           <span className="font-mono text-sm text-primary mb-2 block">// skills</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Tech<span className="text-primary">Stack</span>
+            Core <span className="text-primary">Skills</span>
           </h2>
         </motion.div>
 

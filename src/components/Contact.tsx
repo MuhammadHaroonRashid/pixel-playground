@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Send, Mail, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Send, Mail, MapPin, Github, Phone } from "lucide-react";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -38,26 +38,29 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
           >
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              I'm always open to discussing new projects, creative ideas, or opportunities
-              to be part of your vision. Let's build something amazing together.
+              I'm open to project management, business analysis, and technical product roles.
+              Reach out if you're building products that need strong delivery execution.
             </p>
 
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="font-mono">alex@developer.com</span>
+                <span className="font-mono">najamabass2020@gmail.com</span>
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground">
+                <Phone className="w-5 h-5 text-primary" />
+                <span className="font-mono">+92-317-3036098</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span className="font-mono">San Francisco, CA</span>
+                <span className="font-mono">Islamabad, Pakistan</span>
               </div>
             </div>
 
             <div className="flex gap-4">
               {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Twitter, href: "#", label: "Twitter" },
+                { icon: Github, href: "https://github.com/ctoic", label: "GitHub" },
+                { icon: Mail, href: "mailto:najamabass2020@gmail.com", label: "Email" },
               ].map((social) => (
                 <a
                   key={social.label}

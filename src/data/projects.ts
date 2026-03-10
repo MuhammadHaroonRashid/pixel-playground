@@ -78,4 +78,15 @@ export const projects: Project[] = [
     tags: ["API", "Microservices", "Backend"],
     link: "#",
   },
+  {
+    id: 7,
+    title: "campus-hive-rag-assistant",
+    description: "A multi-agent RAG-based intelligent assistant designed for university operations, supporting students, faculty, and admin workflows.",
+    language: "Python",
+    languageColor: "hsl(48, 96%, 56%)",
+    stars: 0,
+    forks: 0,
+    tags: ["RAG", "Agentic AI", "Product Strategy"],
+    link: "#",
+  },
 ];

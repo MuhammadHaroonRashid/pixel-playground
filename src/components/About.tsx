@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Coffee, Globe, Zap } from "lucide-react";
+import { Briefcase, Users, BarChart3, Workflow } from "lucide-react";
 
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const highlights = [
-    { icon: Code2, label: "Clean Code", desc: "Writing maintainable, scalable solutions" },
-    { icon: Zap, label: "Performance", desc: "Optimizing for speed and efficiency" },
-    { icon: Globe, label: "Open Source", desc: "Contributing to the dev community" },
-    { icon: Coffee, label: "Problem Solver", desc: "Tackling complex challenges daily" },
+    { icon: Briefcase, label: "SDLC Ownership", desc: "Managing full lifecycle from documentation to deployment" },
+    { icon: Users, label: "Stakeholder Alignment", desc: "Bridging business, product, engineering, and QA teams" },
+    { icon: BarChart3, label: "KPI Driven", desc: "Using customer feedback and metrics to guide priorities" },
+    { icon: Workflow, label: "Agile Delivery", desc: "Running Scrum ceremonies and sprint planning effectively" },
   ];
 
   return (
@@ -45,22 +45,20 @@ const About = () => {
               <div className="space-y-4 font-mono text-sm leading-relaxed">
                 <p className="text-muted-foreground">
                   <span className="text-primary"># </span>
-                  <span className="text-foreground font-semibold">Hello World! 👋</span>
+                  <span className="text-foreground font-semibold">Hello, I'm Najam Ali Abass</span>
                 </p>
                 <p className="text-muted-foreground">
-                  I'm a passionate full-stack developer with over 5 years of experience
-                  building web applications that make a difference. I specialize in
-                  React, TypeScript, and Node.js ecosystems.
+                  Project management professional with 2+ years of experience supporting
+                  Scrum framework and agile practices in cross-functional teams.
                 </p>
                 <p className="text-muted-foreground">
-                  When I'm not pushing commits, you'll find me exploring new technologies,
-                  contributing to open-source projects, or mentoring aspiring developers.
+                  Proven track record in product strategy execution, user story development,
+                  acceptance criteria definition, and full SDLC oversight.
                 </p>
                 <p className="text-muted-foreground">
-                  I believe in writing code that is not just functional, but also
-                  <span className="text-primary"> elegant</span>,
-                  <span className="text-accent"> accessible</span>, and
-                  <span className="text-github-orange"> maintainable</span>.
+                  Delivered <span className="text-primary">10+ projects</span> while managing
+                  multiple concurrent initiatives, using tools like Jira, Asana, and Zapier
+                  to keep delivery predictable and high quality.
                 </p>
               </div>
             </div>

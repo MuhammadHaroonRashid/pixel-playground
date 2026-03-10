@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, GitBranch, Terminal } from "lucide-react";
 
-const roles = ["Full Stack Developer", "UI/UX Designer", "Open Source Contributor", "Problem Solver"];
+const roles = ["Project Manager", "Business Analyst", "Technical Product Strategist", "Open Source Maintainer"];
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -77,7 +77,7 @@ const Hero = () => {
               className="text-5xl md:text-7xl font-bold text-foreground mb-4 leading-tight"
             >
               Hi, I'm{" "}
-              <span className="gradient-text-green">Alex</span>
+              <span className="gradient-text-green">Najam</span>
             </motion.h1>
 
             <motion.div
@@ -99,8 +99,8 @@ const Hero = () => {
               transition={{ delay: 0.5 }}
               className="text-lg text-muted-foreground max-w-md mb-8 leading-relaxed"
             >
-              I craft performant, accessible, and beautiful digital experiences.
-              Passionate about open source and clean code architecture.
+              I manage products from idea to deployment, translating business needs
+              into clear roadmaps, user stories, and high-quality software delivery.
             </motion.p>
 
             <motion.div
@@ -132,9 +132,9 @@ const Hero = () => {
               className="flex gap-8 mt-12"
             >
               {[
-                { value: "50+", label: "Repositories" },
-                { value: "2.5k+", label: "Stars" },
-                { value: "5+", label: "Years Exp" },
+                { value: "10+", label: "Projects Delivered" },
+                { value: "6", label: "Ongoing Projects" },
+                { value: "2+", label: "Years Exp" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="text-2xl font-bold text-foreground">{stat.value}</div>
@@ -154,7 +154,7 @@ const Hero = () => {
             <div className="github-card p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm font-mono text-muted-foreground">
-                  2,847 contributions in the last year
+                  100+ repositories and global open-source collaborations
                 </span>
               </div>
               <div className="flex gap-[3px] overflow-hidden">
